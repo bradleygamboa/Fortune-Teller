@@ -52,12 +52,6 @@ app.post('/todos/', function(req, res) {
 
 });
 
-// app.put('/todos/:id', function(req, res) {
-//     //Updates todo with specific id
-//     res.send('Update');
-
-// });
-
 app.delete('/todos/:id', function(req, res) {
     //Deletes todo with specific ids
     models.FortuneTeller.destroy({
@@ -71,5 +65,5 @@ app.delete('/todos/:id', function(req, res) {
 });
 
 app.listen(PORT, function() {
-    console.log('You are connected on Port 8080');
+    console.log('You are connected on localhost:' + PORT);
 });
